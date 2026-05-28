@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknologiforståelse</title>
+  <link rel="stylesheet" href="tek.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+  <div class="floating-logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+
+  <ul>
+    <li><a href="Index.html">Heim</a></li>
+    <li><a href="Engelsk.html">Engelsk</a></li>
+    <li><a href="Gym.html">Gym</a></li>
+    <li><a href="Matte.html">Matte</a></li>
+    <li><a href="Naturfag.html">Naturfag</a></li>
+    <li><a href="Prod-historie.html">Prod Historie</a></li>
+    <li><a href="Teknologiforståelse.html">Teknologiforståelse</a></li>
+    <li><a href="Yff.html">YFF</a></li>
+    <li><a href="Konseptutvikling-programmering.html">Programmering</a></li>
+    <li><a href="Spill.html">Spill</a></li>
+  </ul>
+
+</nav>
+
+  <!-- PAGE -->
+
+  <section class="page">
+
+    <h1>Teknologiforståelse</h1>
+
+    <div class="card">
+
+      <p>
+        Her er bilete frå teknologiforståelsearbeid, oppgåver og prosjekt eg har jobba med.
+      </p>
+
+      <div class="gallery">
+
+        <div class="image-box">
+          <img src="tek1.png" onclick="openImage(this.src)">
+          <div class="image-text">
+            Cisco Packet Tracer
+          </div>
+        </div>
+
+        <div class="image-box">
+          <img src="tek2.png" onclick="openImage(this.src)">
+          <div class="image-text">
+            Ping vg.no
+          </div>
+        </div>
+
+        <div class="image-box">
+          <img src="tek3.png" onclick="openImage(this.src)">
+          <div class="image-text">
+            NDLA AI
+          </div>
+        </div>
+
+        <div class="image-box">
+          <img src="tek4.png" onclick="openImage(this.src)">
+          <div class="image-text">
+            Presentasjon Min PC
+          </div>
+        </div>
+
+        <div class="image-box">
+          <img src="tek5.png" onclick="openImage(this.src)">
+          <div class="image-text">
+            Familien Pettersen
+          </div>
+        </div>
+
+             <div class="fullscreen" id="fullscreen" onclick="closeImage()">
+
+  <img id="fullscreen-img">
+
+  <button class="nextknapp">
+    <a href="Yff.html">
+      Next
+    </a>
+  </button>
+
+      <style>
+
+  .fullscreen{
+    display:none;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.9);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+  }
+
+  .fullscreen img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+  }
+
+  .image-box img{
+    cursor:pointer;
+  }
+
+</style>
+
+<script>
+
+  function openImage(src){
+    document.getElementById("fullscreen").style.display = "flex";
+    document.getElementById("fullscreen-img").src = src;
+  }
+
+  function closeImage(){
+    document.getElementById("fullscreen").style.display = "none";
+  }
+
+</script>
+  </section>
+
+</body>
+</html>
